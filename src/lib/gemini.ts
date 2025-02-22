@@ -11,7 +11,7 @@ export async function generateLessonPlan(prompt: string) {
     const response = result.response;
     return response.text();
   } catch (error) {
-    // console.error("Error generating lesson plan:", error);
+    console.error("Error generating lesson plan:", error);
     return "Error generating lesson plan. Please try again.";
   }
 }
