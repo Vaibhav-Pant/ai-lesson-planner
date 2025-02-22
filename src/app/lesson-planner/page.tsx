@@ -213,7 +213,6 @@ export default function LessonPlanner() {
                 </div>
               ) : (
                 <Textarea
-                  // ref={contentRef}
                   value={generatedLesson}
                   onChange={(e) => setGeneratedLesson(e.target.value)}
                   className="w-full h-full resize-none bg-transparent border-none focus:outline-none"
@@ -222,6 +221,7 @@ export default function LessonPlanner() {
               )}
             </div>
 
+              {/* hidden from screen */}
             <div
               ref={contentRef}
               className="p-10 -z-10 absolute w-full top-1 pb-5 bg-white text-black"

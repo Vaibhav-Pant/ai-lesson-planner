@@ -1,4 +1,4 @@
-"use client"; // This ensures it runs on the client side
+"use client";
 
 import { useEffect } from "react";
 import { redirect } from 'next/navigation';
@@ -15,7 +15,7 @@ const AuthRedirect = () => {
     }
   }, []);
 
-  return null; // This component doesn't render anything, just redirects
+  return null; 
 }
 
 
